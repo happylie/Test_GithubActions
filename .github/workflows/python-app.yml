@@ -45,8 +45,8 @@ jobs:
         python ./test_run.py
     - name: Test Secrets
       run: |
-        a = ${{ secrets.TEST_KEY }}
-        b = TestKey.aaaa
+        a=${{ secrets.TEST_KEY }}
+        b=TEST_KEY.aaaa
     - name: Test Run2
       run: |
         python -V 
